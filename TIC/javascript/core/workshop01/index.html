@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <style>
+        .container{
+            background-color: black;
+            color: yellow;
+        }
+    </style>-->
+</head>
+<body>
+    <div class="container">
+        
+            <form id="myform">
+                <label for="name">Name</label>
+                <input type="text" name="name" required placeholder="type here">
+                <br>
+                <label for="email">email</label>
+                <input type="text" name="email" required placeholder="type here">
+                <br>
+                <label for="password">Password</label>
+                <input type="tetx" name="password" required >
+                <br>
+                
+                <textarea rows="10" cols="50" name="description"></textarea>
+                <br>
+                <input type="submit" value="send">
+            </form>
+        
+    </div>
+    <div id="output">
+
+    </div>
+    <script>
+        var form=document.getElementById("myform");
+        var output=document.getElementById("output");
+        output.innerHTML=form;
+    </script>
+</body>
+</html>
