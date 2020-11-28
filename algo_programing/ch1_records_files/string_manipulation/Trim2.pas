@@ -11,7 +11,7 @@ Var
 Begin
 	While Pos('  ',vString)>0 Do
 	Begin
-        Delete(vString,Pos('  ',vString)+1,1);
+        Delete(vString,Pos('  ',vString),1);
 	End;
 	While Pos(' .',vString)>0 Do
 	Begin

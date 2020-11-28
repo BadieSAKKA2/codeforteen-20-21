@@ -58,9 +58,9 @@ Begin
     str2:='Ali va       a l''ecole  .  Le temps fait beau      .  ';
     Writeln('Str1= ',Str1);
     WriteLn('Str1 Trimmed=',fnTrim(str1));
-    Writeln('Number of words in str1:',fnWordCount(str1));
+    Writeln('Number of words in str1:',fnWordCount(fnTrim(str1)));
     WriteLn('Str2= ',Str2);
     WriteLn('Str2 Trimmed=',fnTrim(str2));
-   WriteLn('Number of words in str2:',fnWordCount(str2));
+   WriteLn('Number of words in str2:',fnWordCount(fnTrim(str2)));
     Readkey;
 End.
